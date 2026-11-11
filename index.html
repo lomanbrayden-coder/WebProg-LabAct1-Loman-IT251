@@ -4,50 +4,102 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <header id="home">
         <h1>My Developer Portfolio</h1>
         <p>Hi! I'm Brayden Zaine G. Loman, an aspiring web developer.</p>
-
-        <nav>
-            <a href="#about">About</a> |
-            <a href="#skills">Skills</a> |
-            <a href="#education">Education</a> |
-            <a href="#projects">Projects</a> |
-            <a href="#contact">Contact</a>
-        </nav>
+        <p>Welcome to my personal portfolio!</p>
     </header>
 
-    <hr>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#projects">Projects</a>
+        <a href="#goals">Goals</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
     <main>
         <section id="about">
             <h2>About Me</h2>
-            <img src="profile.jpg" alt="Profile photo" width="150">
-            <p>Write at least three sentences about yourself.</p>
+            <img src="profile.jpeg" alt="Profile photo" class="profile">
+            <p>Hi! I'm Brayden, currently a second year IT student at Nu Fairview. For my future career I plan on pursuing either Cyber Security or Game Development.
+				For now I am looking to explore different things related to IT to have fun and learn new skills and expand my knowledge. 
+				My Hobbies are watching movies and series, playing racing games, occationally working out, and especially sleeping.</p>
         </section>
 
         <section id="skills">
             <h2>My Technical Skills</h2>
-            <ul>
+            <ul class="skills-list">
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>JavaScript</li>
                 <li>Git</li>
                 <li>Python</li>
+                <li>Java</li>
+                <li>MySQL</li>
             </ul>
         </section>
 
         <section id="education">
             <h2>Educational Background</h2>
-            <table border="1">
+            <table>
                 <tr><th>Category</th><th>Details</th></tr>
-                <tr><td>School</td><td>Nu Fairview</td></tr>
+                <tr><td>School</td><td>NU Fairview</td></tr>
                 <tr><td>Program</td><td>BSIT</td></tr>
-                <tr><td>Year Level</td><td>2nd</td></tr>
+                <tr><td>Year Level</td><td>2nd Year</td></tr>
             </table>
         </section>
 
+        <section id="projects">
+            <h2>My Projects</h2>
+            <article>
+                <h3>Project 1: My First Website</h3>
+                <p>A simple website created using HTML and CSS.</p>
+            </article>
+            <article>
+                <h3>Project 2: Simple Web Platformer Game</h3>
+                <p>Use HTML, CSS, and JavaScript to make a web game similar to the dino game.</p>
+            </article>
+        </section>
+
+        <section id="goals">
+            <h2>My Career Goals</h2>
+            <ol>
+                <li>Expand my knowledge in web development.</li>
+				<li>Learn more programming languages.</li>
+                <li>Create more web development projects.</li>
+                <li>Finish college.</li>
+                <li>Give back to my family.</li>
+            </ol>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>Email: lomanbrayden@gmail.com</p>
+
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Brayden Zaine G. Loman. All rights reserved.</p>
+    </footer>
+
+    <button id="topBtn" type="button" aria-label="Back to top">↑</button>
+
+    <script src="script.js"></script>
 </body>
 </html>
